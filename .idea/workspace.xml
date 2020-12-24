@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="45f24c81-32e0-4b26-bf97-fc8c512ce24b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.cjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AppRenderer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AttachmentImage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Authorized/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DateDescription/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DescriptionIcon/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DescriptionOverflowImages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DisplayConditions/Show.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmptyResult/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FadeAnimation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InfiniteScroll/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ListItem/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Loading/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LogoutButton/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OverflowImages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostCard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QuantityBadge/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QueryAutoComplete/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QuerySelect/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Rate/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Redirect/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RowStretch/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Section/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SelectItemsRenderer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Shimmer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StarCount/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Tag/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useAuthorize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useDimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useHistory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useLoading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useLocalStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useNotification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSocket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/locales/en-US/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/locales/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/locales/locales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/locales/tr-TR/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/loading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/modals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/notifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1m1E9Cw44EGyb7jjZhiXmJM4naF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/hooks" />
+      <recent name="$PROJECT_DIR$/src/reducers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45f24c81-32e0-4b26-bf97-fc8c512ce24b" name="Default Changelist" comment="" />
+      <created>1608652542662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608652542662</updated>
+      <workItem from="1608652544093" duration="4010000" />
+      <workItem from="1608676571090" duration="20658000" />
+      <workItem from="1608758068069" duration="5029000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
