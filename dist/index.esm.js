@@ -480,6 +480,14 @@ var getLocale = function getLocale(payload) {
 
   return name;
 };
+var isJSONEmpty = function isJSONEmpty() {
+  var json = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return !Object.keys(json).length;
+};
+var isArrayEmpty = function isArrayEmpty() {
+  var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  return !array.length;
+};
 var guid = function guid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
     var r = Math.random() * 16 | 0,
@@ -2683,4 +2691,4 @@ var Tag = function Tag(props) {
   })));
 };
 
-export { AppRenderer, ArrayToJSON, AttachmentImage, Authorized, DateDescription, DescriptionIcon, DescriptionOverflowImages, EmptyResult, EnumToArray, FadeAnimation, Header, InfiniteScrollView as InfiniteScroll, JSONToArray, ListItem, Loading, LogoutButton, OverflowImages, PostCard, QuantityBadge, QueryAutoComplete, QuerySelect, Rate, Redirect, RowStretch, Section, SelectItemsRenderer, Shimmer, Show, StarCount, StoreContext, StoreProvider, Tag, actions, appStyles, bytesToSize, combineReducers, constants, destructArray, download, downloadByDataURL, downloadQRCodeById, downloadQRCodeBySVGElement, formatDate, generatedColorFromString$1 as generatedColorFromString, getAddressText, getAppNames, getAppURL$1 as getAppURL, getAppURLs, getCurrentURL, getDangerColor, getFirstLetters, getLocale, getMainColor, getRoutes, getSuccessColor, getUriFromImageObject, guid, hashCode, iFetch, setAppNames, setAppURLs, setDangerColor, setMainColor, setRoutes, setSuccessColor, sum, transformObj, updateObjectByName, useApi, useAuth, useAuthorize, useDimensions, useHistory, useLocalStorage, useRoute, useSocket };
+export { AppRenderer, ArrayToJSON, AttachmentImage, Authorized, DateDescription, DescriptionIcon, DescriptionOverflowImages, EmptyResult, EnumToArray, FadeAnimation, Header, InfiniteScrollView as InfiniteScroll, JSONToArray, ListItem, Loading, LogoutButton, OverflowImages, PostCard, QuantityBadge, QueryAutoComplete, QuerySelect, Rate, Redirect, RowStretch, Section, SelectItemsRenderer, Shimmer, Show, StarCount, StoreContext, StoreProvider, Tag, actions, appStyles, bytesToSize, combineReducers, constants, destructArray, download, downloadByDataURL, downloadQRCodeById, downloadQRCodeBySVGElement, formatDate, generatedColorFromString$1 as generatedColorFromString, getAddressText, getAppNames, getAppURL$1 as getAppURL, getAppURLs, getCurrentURL, getDangerColor, getFirstLetters, getLocale, getMainColor, getRoutes, getSuccessColor, getUriFromImageObject, guid, hashCode, iFetch, isArrayEmpty, isJSONEmpty, setAppNames, setAppURLs, setDangerColor, setMainColor, setRoutes, setSuccessColor, sum, transformObj, updateObjectByName, useApi, useAuth, useAuthorize, useDimensions, useHistory, useLocalStorage, useRoute, useSocket };

@@ -489,6 +489,14 @@ var getLocale = function getLocale(payload) {
 
   return name;
 };
+var isJSONEmpty = function isJSONEmpty() {
+  var json = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return !Object.keys(json).length;
+};
+var isArrayEmpty = function isArrayEmpty() {
+  var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  return !array.length;
+};
 var guid = function guid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
     var r = Math.random() * 16 | 0,
@@ -2751,6 +2759,8 @@ exports.getUriFromImageObject = getUriFromImageObject;
 exports.guid = guid;
 exports.hashCode = hashCode;
 exports.iFetch = iFetch;
+exports.isArrayEmpty = isArrayEmpty;
+exports.isJSONEmpty = isJSONEmpty;
 exports.setAppNames = setAppNames;
 exports.setAppURLs = setAppURLs;
 exports.setDangerColor = setDangerColor;

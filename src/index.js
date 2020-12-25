@@ -47,7 +47,9 @@ export {
     iFetch,
     sum,
     transformObj,
-    guid
+    guid,
+    isJSONEmpty,
+    isArrayEmpty
 } from './utils/functions';
 
 export {default as StoreProvider, StoreContext} from "./store";
