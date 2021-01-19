@@ -1,7 +1,7 @@
 import React, { createContext, useReducer, useMemo, useCallback, useContext, useState, useEffect, cloneElement, forwardRef, useRef, useImperativeHandle } from 'react';
 import moment from 'moment';
 import 'moment/locale/tr';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { useHistory as useHistory$1, Route, BrowserRouter, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 function _defineProperty(obj, key, value) {
@@ -1391,6 +1391,8 @@ var useDimensions = function useDimensions(payload) {
   });
 };
 
+var useHistory = useHistory$1;
+
 var useRoute = function useRoute(params) {
   var _getRoutes = getRoutes(),
       publicRoutes = _getRoutes.publicRoutes,
@@ -1703,13 +1705,13 @@ var AppRenderer = function AppRenderer(props) {
       layout: authorizedLayout
     });
   } else {
-    return /*#__PURE__*/React.createElement(AppPublicRoute, {
+    return /*#__PURE__*/React.createElement(AppPublicRouter, {
       layout: publicLayout
     });
   }
 };
 
-var AppPublicRoute = function AppPublicRoute(props) {
+var AppPublicRouter = function AppPublicRouter(props) {
   return /*#__PURE__*/React.createElement(BrowserRouter, {
     history: history
   }, /*#__PURE__*/React.createElement(props.layout, null, /*#__PURE__*/React.createElement(AppPublicRoutesRenderer, null)));
@@ -1985,4 +1987,4 @@ var Redirect = function Redirect(props) {
   return null;
 };
 
-export { AppRenderer, ArrayToJSON, EnumToArray, FadeAnimation, InfiniteScrollView as InfiniteScroll, JSONArrayIndexOf, JSONToArray, Redirect, Show, StoreContext, StoreProvider, actions, appStyles, bytesToSize, changeColor, coalasce, combineReducers, constants, cos, dateToDescription, deleteElementFromArrayByKey, destructArray, download, downloadByDataURL, downloadQRCodeById, downloadQRCodeBySVGElement, findLastIndex, formatDate, generatedColorFromString, getAddressText, getAppNames, getAppURL$1 as getAppURL, getAppURLs, getCurrentURL, getDangerColor, getDatesOfYear, getFirstLetters, getLocale, getMainColor, getMonthDescription, getRoutes, getSuccessColor, getTodayMonth, getTodayYear, getUriFromImageObject, guid, hashCode, iFetch, insertOrUpdateElementInArrayByKey, isArrayContains, isArrayEmpty, isJSONEmpty, isNullOrUndefined, monthsNumberArray, numberShouldStartWithZero, setAppNames, setAppURLs, setDangerColor, setMainColor, setRoutes, setSuccessColor, spliceString, sum, takeIf, takeUndefinedAsTrue, transformObj, updateObjectByName, useApi, useAuth, useDimensions, useLocalStorage, useRoute, useSocket };
+export { AppRenderer, ArrayToJSON, EnumToArray, FadeAnimation, InfiniteScrollView as InfiniteScroll, JSONArrayIndexOf, JSONToArray, Mapper, Redirect, Show, StoreContext, StoreProvider, actions, appStyles, bytesToSize, changeColor, coalasce, combineReducers, constants, cos, dateToDescription, deleteElementFromArrayByKey, destructArray, download, downloadByDataURL, downloadQRCodeById, downloadQRCodeBySVGElement, findLastIndex, formatDate, generatedColorFromString, getAddressText, getAppNames, getAppURL$1 as getAppURL, getAppURLs, getCurrentURL, getDangerColor, getDatesOfYear, getFirstLetters, getLocale, getMainColor, getMonthDescription, getRoutes, getSuccessColor, getTodayMonth, getTodayYear, getUriFromImageObject, guid, hashCode, iFetch, insertOrUpdateElementInArrayByKey, isArrayContains, isArrayEmpty, isJSONEmpty, isNullOrUndefined, monthsNumberArray, numberShouldStartWithZero, setAppNames, setAppURLs, setDangerColor, setMainColor, setRoutes, setSuccessColor, spliceString, sum, takeIf, takeUndefinedAsTrue, transformObj, updateObjectByName, useApi, useAuth, useDimensions, useHistory, useLocalStorage, useRoute, useSocket };

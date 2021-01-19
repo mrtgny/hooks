@@ -2,11 +2,11 @@ import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Switch} from "react-router-dom";
 import useApi from "../../hooks/useApi";
 import useLocalStorage from "../../hooks/useLocalStorage";
-import {createBrowserHistory} from 'history'
 import useAuth from "../../hooks/useAuth";
 import useRoute from "../../hooks/useRoute";
+import {createBrowserHistory} from "history";
 
-const history = createBrowserHistory()
+const history = createBrowserHistory();
 
 const AppRenderer = (props) => {
     const {userLoadOptions, publicLayout, authorizedLayout, checkingRenderer} = props;
@@ -58,12 +58,12 @@ const AppRenderer = (props) => {
         )
     } else {
         return (
-            <AppPublicRoute layout={publicLayout}/>
+            <AppPublicRouter layout={publicLayout}/>
         )
     }
 }
 
-const AppPublicRoute = props => {
+const AppPublicRouter = props => {
     return (
         <Router history={history}>
             <props.layout>

@@ -5,42 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45f24c81-32e0-4b26-bf97-fc8c512ce24b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Mapper/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useHistory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.cjs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AttachmentImage/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Authorized/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DateDescription/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DescriptionIcon/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DescriptionOverflowImages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EmptyResult/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InfiniteScroll/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfiniteScroll/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListItem/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LogoutButton/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OverflowImages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostCard/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuantityBadge/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QueryAutoComplete/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuerySelect/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redirect/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redirect/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RowStretch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SelectItemsRenderer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Shimmer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StarCount/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tag/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useAuthorize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useDimensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useDimensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useHistory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useLoading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useLoading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppRenderer/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +69,7 @@
       <workItem from="1608676571090" duration="20658000" />
       <workItem from="1608758068069" duration="14105000" />
       <workItem from="1610708342126" duration="689000" />
-      <workItem from="1611062192531" duration="6509000" />
+      <workItem from="1611062192531" duration="9249000" />
     </task>
     <servers />
   </component>

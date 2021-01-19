@@ -1400,6 +1400,8 @@ var useDimensions = function useDimensions(payload) {
   });
 };
 
+var useHistory = reactRouterDom.useHistory;
+
 var useRoute = function useRoute(params) {
   var _getRoutes = getRoutes(),
       publicRoutes = _getRoutes.publicRoutes,
@@ -1712,13 +1714,13 @@ var AppRenderer = function AppRenderer(props) {
       layout: authorizedLayout
     });
   } else {
-    return /*#__PURE__*/React__default['default'].createElement(AppPublicRoute, {
+    return /*#__PURE__*/React__default['default'].createElement(AppPublicRouter, {
       layout: publicLayout
     });
   }
 };
 
-var AppPublicRoute = function AppPublicRoute(props) {
+var AppPublicRouter = function AppPublicRouter(props) {
   return /*#__PURE__*/React__default['default'].createElement(reactRouterDom.BrowserRouter, {
     history: history
   }, /*#__PURE__*/React__default['default'].createElement(props.layout, null, /*#__PURE__*/React__default['default'].createElement(AppPublicRoutesRenderer, null)));
@@ -2001,6 +2003,7 @@ exports.FadeAnimation = FadeAnimation;
 exports.InfiniteScroll = InfiniteScrollView;
 exports.JSONArrayIndexOf = JSONArrayIndexOf;
 exports.JSONToArray = JSONToArray;
+exports.Mapper = Mapper;
 exports.Redirect = Redirect;
 exports.Show = Show;
 exports.StoreContext = StoreContext;
@@ -2064,6 +2067,7 @@ exports.updateObjectByName = updateObjectByName;
 exports.useApi = useApi;
 exports.useAuth = useAuth;
 exports.useDimensions = useDimensions;
+exports.useHistory = useHistory;
 exports.useLocalStorage = useLocalStorage;
 exports.useRoute = useRoute;
 exports.useSocket = useSocket;
