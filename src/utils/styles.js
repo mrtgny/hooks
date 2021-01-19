@@ -1,4 +1,9 @@
 const appStyles = {
+    stretchRow: {
+        display: 'flex',
+        alignItems: 'stretch',
+        flexFlow: 'row wrap'
+    },
     defaultShadow: {
         boxShadow: "0 0 5px -2.75px black",
     },
@@ -83,7 +88,13 @@ const appStyles = {
         width: size,
         height: size,
         borderRadius: size * 2
-    })
+    }),
+    roundedImage: {
+        width: '100%',
+        height: '100%',
+        objectFit: "cover",
+        borderRadius: "50%"
+    }
 }
 
 

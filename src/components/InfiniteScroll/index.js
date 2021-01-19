@@ -1,6 +1,8 @@
 import React, {forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState} from 'react';
 import useApi from "../../hooks/useApi";
 import appStyles from "../../utils/styles";
+import {Show} from "../../index";
+import Mapper from "../Mapper";
 
 const InfiniteScrollView = forwardRef((props, ref) => {
     const {
@@ -118,11 +120,6 @@ const InfiniteScrollView = forwardRef((props, ref) => {
         }
     }, [onRefresh, onReload, reload])
 
-    const onFilter = (filter) => {
-        setFilter(filter)
-        load()
-    }
-
     if (!firstTimeFetched) {
         return shimmer ? <props.shimmer/> : <props.loadingRenderer style={{...appStyles.center}}/>
     }
@@ -131,26 +128,22 @@ const InfiniteScrollView = forwardRef((props, ref) => {
     return (
         <div style={{padding: 16, ...(style || {})}}
              ref={containerView}>
-            <FilterBar filterOptions={filterOptions} style={{margin: "16px 0"}} onFilter={onFilter}/>
-            {
-                hasData ?
-                    <>
-                        {data.map((item, index) => render(item, index, {page, pageSize}))}
-                        {
-                            hasNextPage ?
-                                <div ref={reloaderRef}>
-                                    {
-                                        shimmer ?
-                                            <props.shimmer/> :
-                                            <props.loadingRenderer style={{...appStyles.center, marginTop: 16}}/>
-                                    }
-                                </div>
-                                : null
-                        }
-                    </>
-                    :
-                    empty
-            }
+            <Show condition={hasData}>
+                <Mapper items={data} map={(item, index) => render(item, index, {page, pageSize})}/>
+                <Show condition={hasNextPage}>
+                    <div ref={reloaderRef}>
+                        <Show condition={shimmer}>
+                            <props.shimmer/>
+                        </Show>
+                        <Show condition={loadingRenderer}>
+                            <props.loadingRenderer style={{...appStyles.center, marginTop: 16}}/>
+                        </Show>
+                    </div>
+                </Show>
+            </Show>
+            <Show condition={!hasData}>
+                {empty}
+            </Show>
         </div>
     )
 })

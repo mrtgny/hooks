@@ -300,3 +300,138 @@ export const iFetch = (payload) => {
         onError(e)
     });
 }
+
+export const changeColor = (color, amt) => {
+    var usePound = false;
+    let col = color + "";
+    if (col[0] === "#") {
+        col = col.slice(1);
+        usePound = true;
+    }
+    var num = parseInt(col, 16);
+    var r = (num >> 16) + amt;
+    if (r > 255) {
+        r = 255;
+    } else if (r < 0) {
+        r = 0;
+    }
+    var b = ((num >> 8) & 0x00FF) + amt;
+    if (b > 255) {
+        b = 255;
+    } else if (b < 0) {
+        b = 0;
+    }
+    var g = (num & 0x0000FF) + amt;
+    if (g > 255) {
+        g = 255;
+    } else if (g < 0) {
+        g = 0;
+    }
+    return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
+}
+
+export const takeIf = (condition, value, defaultValue = undefined) => {
+    if (condition) {
+        return value
+    } else {
+        return defaultValue
+    }
+}
+
+export const spliceString = (string, startCount, deleteCount) => {
+    return string.split("").splice(startCount, deleteCount).join("");
+}
+
+export const dateToDescription = (date) => {
+    const momentDay = moment(date, "YYYY-MM-DD");
+    const momentToday = moment(new Date(), "YYYY-MM-DD");
+    const dayDiff = momentToday.diff(momentDay, 'days');
+    const monthDiff = momentToday.diff(momentDay, 'month');
+    if (dayDiff === 1)
+        return `Dün`;
+    else if (dayDiff) {
+        return `${monthDiff || dayDiff} ${monthDiff ? "ay" : "gün"} önce`
+    } else {
+        return "Bugün"
+    }
+}
+
+export const isNullOrUndefined = item => {
+    return item === null || item === undefined
+}
+
+export const coalasce = (first, second) => {
+    if (isNullOrUndefined(first))
+        return second
+    return first
+}
+
+export const numberShouldStartWithZero = number => {
+    return parseInt(number) < 10 ? `0${number}` : number
+}
+
+export const getTodayYear = () => {
+    return new Date().getFullYear();
+}
+
+export const getTodayMonth = () => {
+    return new Date().getMonth() + 1;
+}
+
+export const getMonthDescription = _month => {
+    const month = numberShouldStartWithZero(_month);
+    return moment(`2020-${month}-01`).format("MMMM");
+}
+
+export const getDatesOfYear = year => {
+    let date = moment(`${year}-01-01`);
+    let currentYear = year;
+    const dates = [];
+    while (currentYear === year) {
+        dates.push(date.format("YYYY-MM-DD"));
+        date = moment(date).add(1, 'day')
+        currentYear = date.get("year");
+    }
+    return dates;
+}
+export const monthsNumberArray = Array(12).fill(0).map((_, index) => ((index) % 12) + 1)
+
+export const isArrayContains = (array, value, key) => {
+    return !!array.filter(i => i[key] === value).length
+}
+
+export const JSONArrayIndexOf = (array, value, key) => {
+    return array.map(i => i[key]).indexOf(value);
+}
+
+export const cos = (degree) => {
+    return Math.cos(degree * Math.PI / 180).toFixed(2) * 1
+}
+
+export const insertOrUpdateElementInArrayByKey = (array, idKey, id, item) => {
+    const idKeys = array.map(i => i[idKey]);
+    const indexOfElement = idKeys.indexOf(id);
+    if (indexOfElement > -1)
+        array[indexOfElement] = item;
+    else
+        array.push(item)
+    return array
+}
+
+export const deleteElementFromArrayByKey = (array, idKey, id) => {
+    const idKeys = array.map(i => i[idKey]);
+    const indexOfElement = idKeys.indexOf(id);
+    if (indexOfElement > -1)
+        array.splice(indexOfElement, 1);
+    return array
+}
+
+export const findLastIndex = (array, predicate) => {
+    if (!array) return -1;
+    let index = array.length - 1
+    if (!predicate) return index;
+    for (index; index--; index > -1) {
+        if (predicate(array[index])) break;
+    }
+    return index;
+}

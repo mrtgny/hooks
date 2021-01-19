@@ -14,6 +14,8 @@ const useLoading = () => {
         dispatch({type: actions.DECREASE_LOADING_QUEUE})
     }, [])
 
-    return {...loading, increase, decrease};
+    const isLoading = loading && loading > 0
+
+    return {...loading, isLoading, increase, decrease};
 };
 export default useLoading;
