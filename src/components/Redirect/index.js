@@ -1,7 +1,9 @@
 import {useEffect} from "react";
+import useHistory from "../../hooks/useHistory";
 
 const Redirect = (props) => {
-    const {mode, history, redirectURL: _redirectURL} = props;
+    const {mode, redirectURL: _redirectURL} = props;
+    const history = useHistory();
     const redirectURL = _redirectURL || "/";
     useEffect(() => {
         if (mode === "replace") {

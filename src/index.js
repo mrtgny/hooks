@@ -23,8 +23,6 @@ export {
     setRoutes
 } from "./utils/constants";
 
-export {default as appStyles} from "./utils/styles";
-
 export {
     getAppURL,
     updateObjectByName,

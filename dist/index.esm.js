@@ -1531,115 +1531,6 @@ var useSocket = function useSocket() {
   };
 };
 
-var appStyles = {
-  stretchRow: {
-    display: 'flex',
-    alignItems: 'stretch',
-    flexFlow: 'row wrap'
-  },
-  defaultShadow: {
-    boxShadow: "0 0 5px -2.75px black"
-  },
-  cardBorderRadius: {
-    borderBottomLeftRadius: 20,
-    borderTopRightRadius: 20,
-    borderBottomRightRadius: 20
-  },
-  borderBottom: {
-    borderBottomWidth: 1,
-    borderBottomColor: '#eee'
-  },
-  center: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: 'center',
-    flexShrink: 0
-  },
-  secondaryText: {
-    color: '#aaa'
-  },
-  imageStyle: {
-    height: "100%",
-    width: '100%',
-    borderRadius: 20,
-    resizeMode: 'contain'
-  },
-  listHeader: {
-    fontSize: 18,
-    fontWeight: 'bold'
-  },
-  spreadHorizontally: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-  paddingHorizontal: function paddingHorizontal(value) {
-    return {
-      paddingLeft: value,
-      paddingRight: value
-    };
-  },
-  paddingVertical: function paddingVertical(value) {
-    return {
-      paddingTop: value,
-      paddingBottom: value
-    };
-  },
-  marginHorizontal: function marginHorizontal(value) {
-    return {
-      marginLeft: value,
-      marginRight: value
-    };
-  },
-  marginVertical: function marginVertical(value) {
-    return {
-      marginTop: value,
-      marginBottom: value
-    };
-  },
-  row: {
-    display: 'flex',
-    flexDirection: 'row'
-  },
-  card: {
-    backgroundColor: 'white',
-    borderBottomLeftRadius: 20,
-    borderTopRightRadius: 20,
-    borderBottomRightRadius: 20
-  },
-  grid: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    flexShrink: 'initial'
-  },
-  cardTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: 'black'
-  },
-  cardSubtitle: {
-    marginTop: 8,
-    marginBottom: 8,
-    fontSize: 14,
-    fontWeight: '300'
-  },
-  rounded: function rounded(size) {
-    return {
-      width: size,
-      height: size,
-      borderRadius: size * 2
-    };
-  },
-  roundedImage: {
-    width: '100%',
-    height: '100%',
-    objectFit: "cover",
-    borderRadius: "50%"
-  }
-};
-
 var history = createBrowserHistory();
 
 var AppRenderer = function AppRenderer(props) {
@@ -1934,9 +1825,7 @@ var InfiniteScrollView = /*#__PURE__*/forwardRef(function (props, ref) {
   }, [onRefresh, onReload, reload]);
 
   if (!firstTimeFetched) {
-    return shimmer ? /*#__PURE__*/React.createElement(props.shimmer, null) : /*#__PURE__*/React.createElement(props.loadingRenderer, {
-      style: _objectSpread2({}, appStyles.center)
-    });
+    return shimmer ? /*#__PURE__*/React.createElement(props.shimmer, null) : /*#__PURE__*/React.createElement(props.loadingRenderer, null);
   }
 
   var hasData = !!data.length;
@@ -1964,9 +1853,9 @@ var InfiniteScrollView = /*#__PURE__*/forwardRef(function (props, ref) {
   }, /*#__PURE__*/React.createElement(props.shimmer, null)), /*#__PURE__*/React.createElement(Show, {
     condition: loadingRenderer
   }, /*#__PURE__*/React.createElement(props.loadingRenderer, {
-    style: _objectSpread2(_objectSpread2({}, appStyles.center), {}, {
+    style: {
       marginTop: 16
-    })
+    }
   }))))), /*#__PURE__*/React.createElement(Show, {
     condition: !hasData
   }, empty));
@@ -1974,8 +1863,8 @@ var InfiniteScrollView = /*#__PURE__*/forwardRef(function (props, ref) {
 
 var Redirect = function Redirect(props) {
   var mode = props.mode,
-      history = props.history,
       _redirectURL = props.redirectURL;
+  var history = useHistory();
   var redirectURL = _redirectURL || "/";
   useEffect(function () {
     if (mode === "replace") {
@@ -1987,4 +1876,4 @@ var Redirect = function Redirect(props) {
   return null;
 };
 
-export { AppRenderer, ArrayToJSON, EnumToArray, FadeAnimation, InfiniteScrollView as InfiniteScroll, JSONArrayIndexOf, JSONToArray, Mapper, Redirect, Show, StoreContext, StoreProvider, actions, appStyles, bytesToSize, changeColor, coalasce, combineReducers, constants, cos, dateToDescription, deleteElementFromArrayByKey, destructArray, download, downloadByDataURL, downloadQRCodeById, downloadQRCodeBySVGElement, findLastIndex, formatDate, generatedColorFromString, getAddressText, getAppNames, getAppURL$1 as getAppURL, getAppURLs, getCurrentURL, getDangerColor, getDatesOfYear, getFirstLetters, getLocale, getMainColor, getMonthDescription, getRoutes, getSuccessColor, getTodayMonth, getTodayYear, getUriFromImageObject, guid, hashCode, iFetch, insertOrUpdateElementInArrayByKey, isArrayContains, isArrayEmpty, isJSONEmpty, isNullOrUndefined, monthsNumberArray, numberShouldStartWithZero, setAppNames, setAppURLs, setDangerColor, setMainColor, setRoutes, setSuccessColor, spliceString, sum, takeIf, takeUndefinedAsTrue, transformObj, updateObjectByName, useApi, useAuth, useDimensions, useHistory, useLocalStorage, useRoute, useSocket };
+export { AppRenderer, ArrayToJSON, EnumToArray, FadeAnimation, InfiniteScrollView as InfiniteScroll, JSONArrayIndexOf, JSONToArray, Mapper, Redirect, Show, StoreContext, StoreProvider, actions, bytesToSize, changeColor, coalasce, combineReducers, constants, cos, dateToDescription, deleteElementFromArrayByKey, destructArray, download, downloadByDataURL, downloadQRCodeById, downloadQRCodeBySVGElement, findLastIndex, formatDate, generatedColorFromString, getAddressText, getAppNames, getAppURL$1 as getAppURL, getAppURLs, getCurrentURL, getDangerColor, getDatesOfYear, getFirstLetters, getLocale, getMainColor, getMonthDescription, getRoutes, getSuccessColor, getTodayMonth, getTodayYear, getUriFromImageObject, guid, hashCode, iFetch, insertOrUpdateElementInArrayByKey, isArrayContains, isArrayEmpty, isJSONEmpty, isNullOrUndefined, monthsNumberArray, numberShouldStartWithZero, setAppNames, setAppURLs, setDangerColor, setMainColor, setRoutes, setSuccessColor, spliceString, sum, takeIf, takeUndefinedAsTrue, transformObj, updateObjectByName, useApi, useAuth, useDimensions, useHistory, useLocalStorage, useRoute, useSocket };

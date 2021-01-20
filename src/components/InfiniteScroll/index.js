@@ -1,6 +1,5 @@
 import React, {forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState} from 'react';
 import useApi from "../../hooks/useApi";
-import appStyles from "../../utils/styles";
 import {Show} from "../../index";
 import Mapper from "../Mapper";
 
@@ -121,7 +120,7 @@ const InfiniteScrollView = forwardRef((props, ref) => {
     }, [onRefresh, onReload, reload])
 
     if (!firstTimeFetched) {
-        return shimmer ? <props.shimmer/> : <props.loadingRenderer style={{...appStyles.center}}/>
+        return shimmer ? <props.shimmer/> : <props.loadingRenderer/>
     }
     const hasData = !!data.length
 
@@ -136,7 +135,7 @@ const InfiniteScrollView = forwardRef((props, ref) => {
                             <props.shimmer/>
                         </Show>
                         <Show condition={loadingRenderer}>
-                            <props.loadingRenderer style={{...appStyles.center, marginTop: 16}}/>
+                            <props.loadingRenderer style={{marginTop: 16}}/>
                         </Show>
                     </div>
                 </Show>

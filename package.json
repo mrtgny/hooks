@@ -12,7 +12,6 @@
     "@testing-library/user-event": "^12.1.10",
     "history": "^5.0.0",
     "moment": "^2.29.1",
-    "react-color": "^2.19.3",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
@@ -29,7 +28,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "peerDependencies": {
-    "react-color": "^2.19.3",
     "history": "^5.0.0",
     "moment": "^2.29.1",
     "react": "^17.0.1",
