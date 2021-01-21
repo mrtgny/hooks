@@ -1,14 +1,14 @@
 import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Switch} from "react-router-dom";
-import useApi from "../../hooks/useApi";
-import useLocalStorage from "../../hooks/useLocalStorage";
-import useAuth from "../../hooks/useAuth";
-import useRoute from "../../hooks/useRoute";
 import {createBrowserHistory} from "history";
+import useApi from "../../hooks/useApi";
+import useAuth from "../../hooks/useAuth";
+import useLocalStorage from "../../hooks/useLocalStorage";
+import useRoute from "../../hooks/useRoute";
 
 const history = createBrowserHistory();
 
-const AppRenderer = (props) => {
+const AppWrapper = (props) => {
     const {userLoadOptions, publicLayout, authorizedLayout, checkingRenderer} = props;
     const {isLoggedIn, checked, logout, login, token, setToken} = useAuth();
 
@@ -101,4 +101,4 @@ const AppRoutesRenderer = () => {
     )
 }
 
-export default AppRenderer;
+export default AppWrapper;

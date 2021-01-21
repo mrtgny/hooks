@@ -7,15 +7,17 @@ import resolve from "rollup-plugin-node-resolve";
 export default {
     input: pkg.source,
     output: [
-        { file: pkg.main, format: 'cjs' },
-        { file: pkg.module, format: 'esm' }
+        {file: pkg.main, format: 'cjs'},
+        {file: pkg.module, format: 'esm'}
     ],
     watch: {
         include: [pkg.source, "src/*"],
         exclude: 'node_modules/**'
     },
     plugins: [
-        external(),
+        external({
+            includeDependencies: true
+        }),
         resolve(),
         babel({
             exclude: 'node_modules/**',
@@ -23,5 +25,5 @@ export default {
         }),
         del({targets: ['dist/*']}),
     ],
-    external: Object.keys(pkg.peerDependencies || {}),
+    external: Object.keys(pkg.peerDependencies || {})
 };
