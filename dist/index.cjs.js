@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
 var moment = require('moment');
-require('moment/locale/tr');
+require('moment/min/locales.min');
 var reactRouterDom = require('react-router-dom');
 var history$1 = require('history');
 
@@ -261,11 +261,32 @@ var constants = {
 };
 
 var trTRLocales = {
+  Back: function Back() {
+    return "Geri";
+  },
+  New: function New() {
+    return "Yeni";
+  },
+  Save: function Save() {
+    return "Kaydet";
+  },
+  Decline: function Decline() {
+    return "Vazgeç";
+  },
+  Delete: function Delete() {
+    return "Sil";
+  },
+  Edit: function Edit() {
+    return "Düzenle";
+  },
+  Update: function Update() {
+    return "Güncelle";
+  },
+  Accept: function Accept() {
+    return "Kabul Et";
+  },
   Stores: function Stores() {
     return "Mağazalar";
-  },
-  Home: function Home() {
-    return "Ana Sayfa";
   },
   Purchases: function Purchases() {
     return "Satın Alımlar";
@@ -279,9 +300,6 @@ var trTRLocales = {
   Menu: function Menu() {
     return "Menü";
   },
-  Search: function Search() {
-    return "Ara";
-  },
   Payment: function Payment() {
     return "Ödeme";
   },
@@ -290,47 +308,384 @@ var trTRLocales = {
   },
   Tables: function Tables() {
     return "Masalar";
+  },
+  Username: function Username() {
+    return "Kullanıcı Adı";
+  },
+  Password: function Password() {
+    return "Şifre";
+  },
+  FirstName: function FirstName() {
+    return "Ad";
+  },
+  LastName: function LastName() {
+    return "Soyad";
+  },
+  PhoneNumber: function PhoneNumber() {
+    return "Telefon";
+  },
+  UpdateProfile: function UpdateProfile() {
+    return "Profil Güncelle";
+  },
+  Title: function Title() {
+    return "Başlık";
+  },
+  Color: function Color() {
+    return "Renk";
+  },
+  NewEvent: function NewEvent() {
+    return "Yeni Etkinlik";
+  },
+  Invitations: function Invitations() {
+    return "Davetiyeler";
+  },
+  NoInvitations: function NoInvitations() {
+    return "Davetiye bulunamadı";
+  },
+  Home: function Home() {
+    return "Ana Sayfa";
+  },
+  Today: function Today() {
+    return "Bugün";
+  },
+  Tomorrow: function Tomorrow() {
+    return "Yarın";
+  },
+  ThisWeek: function ThisWeek() {
+    return "Bu Hafta";
+  },
+  ThisMonth: function ThisMonth() {
+    return "Bu Ay";
+  },
+  EmptyEvents: function EmptyEvents() {
+    return "Etkinlik Bulunmamaktadır.";
+  },
+  EmptyTags: function EmptyTags() {
+    return "Etiket Bulunmamaktadır.";
+  },
+  SignIn: function SignIn() {
+    return "Giriş Yap";
+  },
+  SignUp: function SignUp() {
+    return "Üye Ol";
+  },
+  StartTime: function StartTime() {
+    return "Başlangıç Saati";
+  },
+  EndTime: function EndTime() {
+    return "Bitiş Saati";
+  },
+  Descriptions: function Descriptions() {
+    return "Açıklamalar";
+  },
+  Shared: function Shared() {
+    return "Paylaşılanlar";
+  },
+  Search: function Search() {
+    return "Ara";
+  },
+  Agenda: function Agenda() {
+    return "Ajanda";
+  },
+  Events: function Events() {
+    return "Etkinlikler";
+  },
+  Tags: function Tags() {
+    return "Etiketler";
+  },
+  NewTag: function NewTag() {
+    return "Yeni Etiket";
+  },
+  EditTag: function EditTag() {
+    return "Etiketi Düzenle";
+  },
+  Complete: function Complete() {
+    return "Tamamla";
+  },
+  ByYou: function ByYou() {
+    return "Senin";
+  },
+  UploadImage: function UploadImage() {
+    return "Görsel Yükle";
+  },
+  DeleteConfirm: function DeleteConfirm() {
+    return "Silmek istediğinize emin misiniz?";
+  },
+  AlreadyHaveAnAccount: function AlreadyHaveAnAccount() {
+    return "Zaten üyeyim?";
+  },
+  CancelInviteConfirm: function CancelInviteConfirm() {
+    return "Davetiyeyi İptal etmek istediğinize emin misiniz?";
+  },
+  CompletedBy: function CompletedBy(_ref) {
+    var username = _ref.username,
+        date = _ref.date;
+    return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, username, " taraf\u0131ndan ", date, " tarihinde tamamland\u0131.");
+  },
+  UpdatedBy: function UpdatedBy(_ref2) {
+    var username = _ref2.username,
+        date = _ref2.date;
+    return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, username, " taraf\u0131ndan ", date, " tarihinde g\xFCncellendi.");
+  },
+  Loading: function Loading() {
+    return "Yükleniyor...";
   }
 };
-var languageKeys = ["tr"];
-
-var exportLocales = function exportLocales(languageKeys, languages) {
-  var exp = {};
-  languageKeys.forEach(function (i) {
-    exp[i] = languages;
-  });
-  return exp;
-};
-
-var TRLocales = exportLocales(languageKeys, trTRLocales);
 
 var enUSLocales = {
+  Back: function Back() {
+    return "Back";
+  },
+  New: function New() {
+    return "New";
+  },
+  Decline: function Decline() {
+    return "Decline";
+  },
+  Delete: function Delete() {
+    return "Delete";
+  },
+  Edit: function Edit() {
+    return "Edit";
+  },
+  Save: function Save() {
+    return "Save";
+  },
+  Update: function Update() {
+    return "Update";
+  },
+  Purchases: function Purchases() {
+    return "Purchases";
+  },
+  Sales: function Sales() {
+    return "Sales";
+  },
+  Profile: function Profile() {
+    return "Profile";
+  },
+  Menu: function Menu() {
+    return "Menu";
+  },
+  Payment: function Payment() {
+    return "Payment";
+  },
+  Orders: function Orders() {
+    return "Orders";
+  },
+  Tables: function Tables() {
+    return "Tables";
+  },
   Stores: function Stores() {
     return "Stores";
   },
+  Loading: function Loading() {
+    return "Loading...";
+  },
+  Username: function Username() {
+    return "Username";
+  },
+  Password: function Password() {
+    return "Password";
+  },
+  FirstName: function FirstName() {
+    return "First name";
+  },
+  LastName: function LastName() {
+    return "Last name";
+  },
+  PhoneNumber: function PhoneNumber() {
+    return "Phone";
+  },
+  UpdateProfile: function UpdateProfile() {
+    return "Update Profile";
+  },
+  Accept: function Accept() {
+    return "Accept";
+  },
+  Title: function Title() {
+    return "Title";
+  },
+  Color: function Color() {
+    return "Color";
+  },
+  NewEvent: function NewEvent() {
+    return "New Event";
+  },
+  Invitations: function Invitations() {
+    return "Invitations";
+  },
+  NoInvitations: function NoInvitations() {
+    return "No Invitation";
+  },
   Home: function Home() {
     return "Home";
+  },
+  Today: function Today() {
+    return "Today";
+  },
+  Tomorrow: function Tomorrow() {
+    return "Tomorrow";
+  },
+  ThisWeek: function ThisWeek() {
+    return "This Week";
+  },
+  ThisMonth: function ThisMonth() {
+    return "This Month";
+  },
+  EmptyEvents: function EmptyEvents() {
+    return "No Event.";
+  },
+  EmptyTags: function EmptyTags() {
+    return "No Tag.";
+  },
+  SignIn: function SignIn() {
+    return "Sign In";
+  },
+  SignUp: function SignUp() {
+    return "Sign Up";
+  },
+  StartTime: function StartTime() {
+    return "Start Time";
+  },
+  EndTime: function EndTime() {
+    return "End Time";
+  },
+  Descriptions: function Descriptions() {
+    return "Descriptions";
+  },
+  Shared: function Shared() {
+    return "Shared";
+  },
+  Search: function Search() {
+    return "Search";
+  },
+  Agenda: function Agenda() {
+    return "Agenda";
+  },
+  Events: function Events() {
+    return "Events";
+  },
+  Tags: function Tags() {
+    return "Tags";
+  },
+  NewTag: function NewTag() {
+    return "New Tag";
+  },
+  EditTag: function EditTag() {
+    return "Edit Tag";
+  },
+  Complete: function Complete() {
+    return "Complete";
+  },
+  ByYou: function ByYou() {
+    return "You";
+  },
+  UploadImage: function UploadImage() {
+    return "Upload Image";
+  },
+  DeleteConfirm: function DeleteConfirm() {
+    return "Are you sure want to delete?";
+  },
+  CancelInviteConfirm: function CancelInviteConfirm() {
+    return "Are you sure want to cancel?";
+  },
+  AlreadyHaveAnAccount: function AlreadyHaveAnAccount() {
+    return "Already a member";
+  },
+  CompletedBy: function CompletedBy(_ref) {
+    var username = _ref.username,
+        date = _ref.date;
+    return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, "Completed by ", username, " at ", date);
+  },
+  UpdatedBy: function UpdatedBy(_ref2) {
+    var username = _ref2.username,
+        date = _ref2.date;
+    return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, "Updated by ", username, " at ", date);
   }
 };
-var languageKeys$1 = ["en", "en-us"];
 
-var exportLocales$1 = function exportLocales(languageKeys, languages) {
-  var exp = {};
-  languageKeys.forEach(function (i) {
-    exp[i] = languages;
-  });
-  return exp;
+var AllLocales = {
+  tr: _objectSpread2({}, trTRLocales),
+  en: _objectSpread2({}, enUSLocales),
+  "en-us": _objectSpread2({}, enUSLocales),
+  "en-en": _objectSpread2({}, enUSLocales)
 };
 
-var ENLocales = exportLocales$1(languageKeys$1, enUSLocales);
+var Locales = {
+  Stores: "Stores",
+  Search: "Search",
+  Profile: "Profile",
+  Tables: "Tables",
+  Purchases: "Purchases",
+  Sales: "Sales",
+  Payment: "Payment",
+  Waiting: "Waiting",
+  Orders: "Orders",
+  Home: "Home",
+  Menu: "Menu",
+  New: "New",
+  Edit: "Edit",
+  Delete: "Delete",
+  Save: "Save",
+  Decline: "Decline",
+  Back: "Back",
+  Update: "Update",
+  Accept: "Accept",
+  Username: "Username",
+  Password: "Password",
+  FirstName: "FirstName",
+  LastName: "LastName",
+  PhoneNumber: "PhoneNumber",
+  UpdateProfile: "UpdateProfile",
+  Title: "Title",
+  Color: "Color",
+  NewEvent: "NewEvent",
+  Invitations: "Invitations",
+  NoInvitations: "NoInvitations",
+  Today: "Today",
+  Tomorrow: "Tomorrow",
+  ThisWeek: "ThisWeek",
+  ThisMonth: "ThisMonth",
+  EmptyEvents: "EmptyEvents",
+  EmptyTags: "EmptyTags",
+  SignIn: "SignIn",
+  SignUp: "SignUp",
+  StartTime: "StartTime",
+  EndTime: "EndTime",
+  Descriptions: "Descriptions",
+  Shared: "Shared",
+  Agenda: "Agenda",
+  Events: "Events",
+  Tags: "Tags",
+  NewTag: "NewTag",
+  EditTag: "EditTag",
+  Complete: "Complete",
+  ByYou: "ByYou",
+  UploadImage: "UploadImage",
+  DeleteConfirm: "DeleteConfirm",
+  AlreadyHaveAnAccount: "AlreadyHaveAnAccount",
+  CancelInviteConfirm: "CancelInviteConfirm",
+  CompletedBy: "CompletedBy",
+  UpdatedBy: "UpdatedBy",
+  Loading: "Loading"
+};
 
-var AllLocales = _objectSpread2(_objectSpread2({}, TRLocales), ENLocales);
-
+moment__default['default'].locale(navigator.language);
+var defaultLocale = undefined;
+var setDefaultLocale = function setDefaultLocale(locale) {
+  defaultLocale = locale;
+};
+var updateLocales = function updateLocales(region, values) {
+  var oldLocales = AllLocales[region] || {};
+  AllLocales[region] = _objectSpread2(_objectSpread2({}, oldLocales), values);
+  Object.keys(values).forEach(function (i) {
+    Locales[i] = i;
+  });
+};
 var deepCopy = function deepCopy() {
   var json = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   return JSON.parse(JSON.stringify(json));
 };
-
 var combineReducers = function combineReducers(reducers) {
   return function () {
     var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -479,7 +834,7 @@ var getLocale = function getLocale(payload) {
   var name = payload.name,
       params = payload.params;
   var language = navigator.language;
-  var locale = AllLocales[language] || {};
+  var locale = AllLocales[language] || AllLocales[defaultLocale] || {};
   var localeValue = locale[name];
 
   if (localeValue) {
@@ -1642,6 +1997,7 @@ exports.ArrayToJSON = ArrayToJSON;
 exports.EnumToArray = EnumToArray;
 exports.JSONArrayIndexOf = JSONArrayIndexOf;
 exports.JSONToArray = JSONToArray;
+exports.Locales = Locales;
 exports.StoreContext = StoreContext;
 exports.StoreProvider = StoreProvider;
 exports.actions = actions;
@@ -1652,6 +2008,7 @@ exports.combineReducers = combineReducers;
 exports.constants = constants;
 exports.cos = cos;
 exports.dateToDescription = dateToDescription;
+exports.deepCopy = deepCopy;
 exports.deleteElementFromArrayByKey = deleteElementFromArrayByKey;
 exports.destructArray = destructArray;
 exports.download = download;
@@ -1690,6 +2047,7 @@ exports.numberShouldStartWithZero = numberShouldStartWithZero;
 exports.setAppNames = setAppNames;
 exports.setAppURLs = setAppURLs;
 exports.setDangerColor = setDangerColor;
+exports.setDefaultLocale = setDefaultLocale;
 exports.setMainColor = setMainColor;
 exports.setRoutes = setRoutes;
 exports.setSuccessColor = setSuccessColor;
@@ -1698,6 +2056,7 @@ exports.sum = sum;
 exports.takeIf = takeIf;
 exports.takeUndefinedAsTrue = takeUndefinedAsTrue;
 exports.transformObj = transformObj;
+exports.updateLocales = updateLocales;
 exports.updateObjectByName = updateObjectByName;
 exports.useApi = useApi;
 exports.useAuth = useAuth;

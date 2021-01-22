@@ -1,9 +1,11 @@
 import TRLocales from "./tr-TR";
 import ENLocales from "./en-US";
 
-export const AllLocales = {
-    ...TRLocales,
-    ...ENLocales
+let AllLocales = {
+    tr: {...TRLocales},
+    en: {...ENLocales},
+    "en-us": {...ENLocales},
+    "en-en": {...ENLocales},
 }
 
 export default AllLocales

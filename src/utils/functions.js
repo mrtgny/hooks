@@ -1,9 +1,25 @@
 import constants, {getAppNames, getAppURLs} from "./constants";
 import moment from "moment";
 import AllLocales from "../locales/locales";
-import "moment/locale/tr";
+import Locales from "../locales";
+import 'moment/min/locales.min'
 
-const deepCopy = (json = {}) => {
+moment.locale(navigator.language)
+
+let defaultLocale = undefined;
+export const setDefaultLocale = locale => {
+    defaultLocale = locale;
+}
+
+export const updateLocales = (region, values) => {
+    const oldLocales = AllLocales[region] || {}
+    AllLocales[region] = {...oldLocales, ...values};
+    Object.keys(values).forEach(i => {
+        Locales[i] = i
+    });
+}
+
+export const deepCopy = (json = {}) => {
     return JSON.parse(JSON.stringify(json));
 }
 
@@ -148,7 +164,7 @@ export const formatDate = (date, format = "DD MMMM YYYY") => {
 export const getLocale = (payload) => {
     const {name, params} = payload;
     const language = navigator.language
-    const locale = AllLocales[language] || {}
+    const locale = AllLocales[language] || AllLocales[defaultLocale] || {}
     const localeValue = locale[name]
 
     if (localeValue) {

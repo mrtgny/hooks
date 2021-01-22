@@ -7,6 +7,7 @@ export {default as useRoute} from "./hooks/useRoute";
 export {default as useSocket} from "./hooks/useSocket";
 export {default as actions} from "./actions";
 export {default as AppWrapper} from './components/AppWrapper'
+export {default as Locales} from "./locales";
 
 export {
     default as constants,
@@ -45,6 +46,7 @@ export {
     getLocale,
     getUriFromImageObject,
     hashCode,
+    deepCopy,
     iFetch,
     sum,
     transformObj,
@@ -69,7 +71,9 @@ export {
     dateToDescription,
     takeUndefinedAsTrue,
     changeColor,
-    spliceString
+    spliceString,
+    updateLocales,
+    setDefaultLocale
 } from './utils/functions';
 
 export {default as StoreProvider, StoreContext} from "./store";
